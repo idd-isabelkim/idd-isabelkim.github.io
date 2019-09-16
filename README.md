@@ -8,14 +8,21 @@
 
 ## Meeting Notes : Sept 11 2019
 
-### Features
+### Top Bar
 - Logo
 - Register/Log In
-- Menu Bar
 - Search button
-- 
+- Directory
 
-### Contents
+### Menu Bar
+- About George Brown
+- Programs
+- Admissions
+- Services
+- Campus
+- Contact
+
+### IDD Contents
 - About Interaction Design and Development
 - Courses (First Year, Second Year ...)
 - Learning Outcomes
@@ -24,6 +31,7 @@
 - Admission Requirements
 - International
 - Student Life
+- Student Work
 - Footer
     - Copyright
     - 
