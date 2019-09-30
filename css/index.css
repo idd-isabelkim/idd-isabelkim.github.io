@@ -1,3 +1,72 @@
-body {
-	background-color: #0065a4;
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap');
+
+
+html {
+	--col-bg: #D9DEC2;	
+	--col-bg-b: #0065a4;
+	--col-bg-on: #424242;
+	--col-bg-b-on: #ffffff;
+}
+
+body {	
+	font: 1em 'Merriweather Sans', arial, sans-serif;
+	line-height: 1;
+	background-color: var(--col-bg);
+	color: var(--col-bg-on);
+}
+h1 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+ul {
+	font-size: 1rem;
+	margin: 0.7em;
+}
+
+li {
+	list-style: none;
+	font-weight: 300;
+	font-size: 1em;
+}
+p {
+	font-weight: 300;
+	font-size: q
+}
+a{
+	text-decoration: none;
+
+}
+.logo-bar {
+	width: 100%;
+    text-align: middle;
+    margin: auto;
+    display: grid;
+    grid-gap: 1em;
+	vertical-align: middle;
+	background-color: var(--col-bg-b)
+}
+.logo-bar li{
+    display: inline-block;
+    color: var(--col-bg-b-on);
+    padding: 0px;
+}
+
+.menu-categories li {
+	display: block;
+
+}
+main {
+	background-color: var(--col-bg)
+}
+.detail {
+	text-align: center;
+	background-image: url('/img/students.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
 }

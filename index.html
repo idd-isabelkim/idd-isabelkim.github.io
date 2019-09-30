@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-	  <meta charset="utf-8">
-	  <title>GBC IDD (re)design</title>
-	  <meta name="description" content="Website for Interaction Design">
-	  <meta name="author" content="Na Hyun Kim">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="css/reset.css">
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	  <link rel="stylesheet" href="css/index.css">
+	<meta charset="utf-8">
+	<title>GBC IDD (re)design</title>
+	<meta name="description" content="Website for Interaction Design">
+	<meta name="author" content="Na Hyun Kim">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
- <header>
+<header>
 	<!--Logo Bar (inline)-->
-	<nav class="Logo-Bar">
-		<div class="GBC-logo">
-			<a class="logo"><href="index.html"><img src="img/GBC logo.png" alt="Logo"></a>
+	<nav class="logo-bar">
+		<div class="gbc-logo">
+			<a class="logo"><href="index.html"><img src="img/GBC logo.png" alt="logo"></a>
 		</div>
 		<ul class="top-right">
 			<li class="menu-Register"><a href="#">Register/Log-in</a></li>
@@ -26,6 +26,7 @@
 	</nav>
 	<!--Menu Bar (inline)-->
 	<nav class="menu-bar">
+		<button>=</button>
 		<ul class="menu-categories">
 			<li class="menu-about-GBC"><a href="#">About George Brown</a></li>
 			<li class="menu-programs"><a href="#">Programs</a></li>
@@ -35,11 +36,11 @@
 			<li class="menu-contact"><a href="#">Contact</a></li>	  
 		</ul>
 	</nav>
- </header>
+</header>
 
 <main>
 	<!--IDD Title (inline)-->
-	<h1>Interaction Design and Development (G113) </h1>
+	<h1>Interaction Design (G113) </h1>
 	<!--Inline as the title-->
 	<ul class="IDD-bar">
 		<li class="IDD-apply"><a href="#">Apply Now</a></li>
@@ -47,14 +48,16 @@
 		<li class="IDD-contact"><a href="#">Contact Us</a></li>
 	</ul>
 	<!--IDD Details (inline below the title) -->
-	<h3>Offered By</h3>
-	<p>School of Design</p>
-	<h3>Starting Month</h3>
-	<p>September, January</p>
-	<h3>Method of Study</h3>
-	<p>Full-Time (6 Semesters)</p>
-	<h3>Credential</h3>
-	<p>Ontario College Advanced Diploma</p>
+	<article class="detail">
+		<dt>Offered By</dt>
+		<dd>School of Design</dd>
+		<dt>Starting Month</dt>
+		<dd>September, January</dd>
+		<dt>Method of Study</dt>
+		<dd>Full-Time (6 Semesters)</dd>
+		<dt>Credential</dt>
+		<dd>Ontario College Advanced Diploma</dd>
+	</article>
 
 	<!--IDD Menu Bar (inline) -->
 	<nav class="IDD-menu-bar">
@@ -70,42 +73,59 @@
 	</nav>
 
 
-	<section class="About">	
+	<article class="about">	
 		<h2>About Program</h2>
-		<h3>Interaction Design is an interdisciplinary field merging design skills such as 
-			user experience, interface development and graphic design with coding fundamentals
-			to create meaningful experiences between the user and digital platforms such as 
-			social media, websites, wearables and mobile devices.</h3>
-		<p>Modified by the psychological, social, economic and cultural factors that shape our 
-			present and future world, this ever-evolving field envisions new ways of humancomputer 
-			interaction within systems, services, products and spaces across multiple industries.</p>
-		<p>Throughout the Interaction Design and Development program, students will be expected to 
-			address such topics as mixed realities, immersive environments, usability, spatial 
-			relations and human factors. Students will engage in research, design, testing and 
-			group work to create original interactions in a way that is meaningful and practical.</p>
+		<p class="lead">Interaction Design is an interdisciplinary field merging design skills such as user experience, interface development and graphic design with coding fundamentals to create meaningful experiences between the user and digital platforms such as social media, websites, wearables and mobile devices.</p>
+		<p>Modified by the psychological, social, economic and cultural factors that shape our present and future world, this ever-evolving field envisions new ways of humancomputer interaction within systems, services, products and spaces across multiple industries.</p>
+		<p>Throughout the Interaction Design and Development program, students will be expected to address such topics as mixed realities, immersive environments, usability, spatial relations and human factors. Students will engage in research, design, testing and group work to create original interactions in a way that is meaningful and practical.</p>
 		
-	</section>
-	<section class="Courses"></section>
+	</article>
+	<article class="courses">
 		<h2>Courses</h2>
-		<h3>Semester 1</h3>
-		<p>INTR1001: 2D Visualiztion</p>
-		<p>INTR1002: Information Architecture</p>
-		<p>INTR1003: Visual Design</p>
-		<p>INTR1005: Technical Drawing</p>
-		<p>INTR1006: Interactive Systems</p>
-		<p>COMM1077: College English</p>
-		<h3>Semester 2</h3>
-		<p>INTR1011: 3D Visualization 1</p>
-		<p>INTR1012: Information Architecture 2</p>
-		<p>INTR1013: Information Design</p>
-		<p>INTR1015: Technical Drawing 2</p>
-		<p>INTR2004: Usability Testing</p>
-		<p>GHUM1029: Design Culture</p>
-		<h3>Semester 3</h3>
-		<p>INTR1014: Cognitive Ergonomics</p>
+		<ul>Semester 1</ul>
+		<li>INTR1001: 2D Visualiztion</li>
+		<li>INTR1002: Information Architecture</li>
+		<li>INTR1003: Visual Design</li>
+		<li>INTR1005: Technical Drawing</li>
+		<li>INTR1006: Interactive Systems</li>
+		<li>COMM1077: College English</li>
+		<ul>Semester 2</ul>
+		<li>INTR1011: 3D Visualization 1</li>
+		<li>INTR1012: Information Architecture 2</li>
+		<li>INTR1013: Information Design</li>
+		<li>INTR1015: Technical Drawing 2</li>
+		<li>INTR2004: Usability Testing</li>
+		<li>GHUM1029: Design Culture</li>
+		<ul>Semester 3</ul>
+		<li>INTR1014: Cognitive Ergonomics</li>
+		<li>INTR2001: 3D Visualization 2</li>
+		<li>INTR2002: Interface Development 1</li>
+		<li>INTR2003: Communicating Design</li>
+		<li>INTR2005: Branding and Marketing Strategies</li>
+		<ul>Semester 4</ul>
+		<li>INTR2011: 3D Visualization 3</li>
+		<li>INTR2012: Interface Development</li>
+		<li>INTR2013: Physical Interfaces</li>
+		<li>INTR2016: Design Process and Management</li>
+		<li>INTR3004: Ergonomics in Design</li>
+		<li>GNED: General Education Elective</li>
+		<ul>Semester 5</ul>
+		<li>INTR3002: Device Development 1</li>
+		<li>INTR3006: Portfolio 1</li>
+		<li>INTR3008: Interactive Systems Project 1</li>
+		<li>INTR3010: Immersive Media 1</li>
+		<li>INTR3013: Human Computer Interactions</li>
+		<li>GNED: General Eduction Elective</li>
+		<ul>Semester 6</ul>
+		<li>INTR3012: Device Development 2</li>
+		<li>INTR2018: Interactive Systems Project 2</li>
+		<li>INTR3020: Immersive Media 2</li>
+		<li>INTR3019: Data Visualization</li>
+		<li>INTR3016: Portfolio 2</li>
+		<a>or</a>
+		<li>INTR3030: Field Placement</li>
 
-
-</main>
+	</article>
 
 </body>
 </html>
