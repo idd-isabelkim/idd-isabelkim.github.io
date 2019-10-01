@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,500,700&display=swap');
 
 
 html {
@@ -9,13 +9,15 @@ html {
 }
 
 body {	
-	font: 1em 'Merriweather Sans', arial, sans-serif;
+	font: 0.9375em 'Merriweather Sans', arial, sans-serif;
 	line-height: 1;
 	background-color: var(--col-bg);
 	color: var(--col-bg-on);
+	width: 100%;
 }
+
 h1 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 700;
 }
 
@@ -25,7 +27,6 @@ h2 {
 
 ul {
 	font-size: 1rem;
-	margin: 0.7em;
 }
 
 li {
@@ -35,38 +36,115 @@ li {
 }
 p {
 	font-weight: 300;
-	font-size: q
+	font-size: 1em
 }
 a{
 	text-decoration: none;
 
 }
+
 .logo-bar {
 	width: 100%;
+	max-height: 5rem;
     text-align: middle;
     margin: auto;
-    display: grid;
-    grid-gap: 1em;
-	vertical-align: middle;
-	background-color: var(--col-bg-b)
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 1rem;
+	background-color: var(--col-bg-b);
+	position: fixed;
+	
 }
-.logo-bar li{
+/* .logo-bar li{
     display: inline-block;
-    color: var(--col-bg-b-on);
     padding: 0px;
+} */
+.logo-bar a{
+	color: var(--col-bg-b-on);
 }
 
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: var(--col-bg);
+	width: 100%;
+	font-weight: 300
+}
+.menu {
+	text-align: center;
+	padding: 1.5rem 0;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu a{
+	display: block;
+	padding: 0.4rem;
+	color: var(--col-bg-on);
+	border-bottom: 0.05rem solid var(--col-bg-on);
+}
+.logo-bar img{
+	max-height: 5em;
+}
 .menu-categories li {
 	display: block;
+}
+.logo {
+	text-align: center
+}
+.breadcrumbs li{
+	display: inline-block;
+}
+.breadcrumbs {
+	padding: 5.5rem 0 0.5rem 0;
+	text-align: center;
+	font-size: 0.7rem
 
 }
-main {
-	background-color: var(--col-bg)
-}
-.detail {
+.title {
+	background-color: var(--col-bg-b);
+	color: var(--col-bg-b-on);
+	height: 3rem;
+	width: 100%;
+	padding: 1rem 0 1rem 0;
 	text-align: center;
-	background-image: url('/img/students.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% auto;
+	text-transform: uppercase;
+}
+
+.IDD-bar{
+	padding: 2em 0;
+}
+.IDD-bar li{
+	display: inline-block;
+}
+/* .detail {
+	text-align: center;
+	font-size: 0.5em;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: auto auto;
+	grid-template-areas:
+	 "top top top top"
+	 "bottom bottom bottom bottom"
+}
+.detail dt{
+	font-size: 1.3em
+} */
+
+.detail {
+	display: inline-grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+	bottom: 5.5rem;
+	color: var(--col-bg-b-on);
+	padding: 0 1rem;
+}
+.detail dt {
+	font-size: 0.7rem;
+	font-weight: 700;
+	padding: 0.5rem 0 0.2rem 0
+}
+.detail dd {
+	font-size: 0.7rem;
+	font-weight: 300
 }
