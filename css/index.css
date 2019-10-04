@@ -9,7 +9,7 @@ html {
 }
 
 body {	
-	font: 0.9375em 'Merriweather Sans', arial, sans-serif;
+	font: 1em 'Merriweather Sans', arial, sans-serif;
 	line-height: 1;
 	background-color: var(--col-bg);
 	color: var(--col-bg-on);
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: 700;
 }
 
@@ -32,15 +32,18 @@ ul {
 li {
 	list-style: none;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 1rem;
 }
 p {
 	font-weight: 300;
-	font-size: 1em
+	font-size: 0.9rem;
 }
 a{
 	text-decoration: none;
-
+}
+button {
+	background: transparent;
+	border: none;
 }
 
 .logo-bar {
@@ -53,6 +56,7 @@ a{
 	grid-gap: 1rem;
 	background-color: var(--col-bg-b);
 	position: fixed;
+	z-index: 1;
 	
 }
 /* .logo-bar li{
@@ -68,8 +72,10 @@ a{
 	position: absolute;
 	background-color: var(--col-bg);
 	width: 100%;
-	font-weight: 300
+	font-weight: 300;
+	font-size: 0.875rem;
 }
+
 .menu {
 	text-align: center;
 	padding: 1.5rem 0;
@@ -77,11 +83,15 @@ a{
 .dropdown:hover .dropdown-menu {
 	display: block;
 }
+.dropdown-menu a:hover{
+	background: #CCCCCC;
+	color: var(--col-bg-b-on);
+}
 .dropdown-menu a{
 	display: block;
-	padding: 0.4rem;
+	padding: 0.7rem;
 	color: var(--col-bg-on);
-	border-bottom: 0.05rem solid var(--col-bg-on);
+	border-bottom: 0.02rem solid var(--col-bg-on);
 }
 .logo-bar img{
 	max-height: 5em;
@@ -94,12 +104,14 @@ a{
 }
 .breadcrumbs li{
 	display: inline-block;
+	font-size: 0.8rem
+}
+.breadcrumbs span {
+	font-size: 0.8rem;
 }
 .breadcrumbs {
 	padding: 5.5rem 0 0.5rem 0;
 	text-align: center;
-	font-size: 0.7rem
-
 }
 .title {
 	background-color: var(--col-bg-b);
@@ -117,34 +129,82 @@ a{
 .IDD-bar li{
 	display: inline-block;
 }
-/* .detail {
-	text-align: center;
-	font-size: 0.5em;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr)
-	grid-template-rows: auto auto;
-	grid-template-areas:
-	 "top top top top"
-	 "bottom bottom bottom bottom"
-}
-.detail dt{
-	font-size: 1.3em
-} */
 
 .detail {
 	display: inline-grid;
 	grid-template-columns: repeat(2, 1fr);
 	position: relative;
-	bottom: 5.5rem;
+	bottom: 6rem;
 	color: var(--col-bg-b-on);
 	padding: 0 1rem;
 }
 .detail dt {
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-weight: 700;
-	padding: 0.5rem 0 0.2rem 0
+	padding: 0.5rem 0 0.3rem 0
 }
 .detail dd {
 	font-size: 0.7rem;
 	font-weight: 300
+}
+.about {
+	padding: 0 1rem
+}
+.about p{
+	line-height: 1.5rem;
+	padding: 1rem 0
+	/* letter-spacing: 0.02rem; */
+}
+
+
+.courses {
+	padding: 0 1rem;
+}
+.courses h2 {
+	padding: .5rem 0;
+	border-bottom: .05rem solid black;
+}
+.course-hover {
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto auto;
+	align-self: center;
+}
+.course-hover ul {
+	padding: .5rem 0;
+	color: var(--col-bg-on);
+	font-weight: 300;
+}
+.course-hover button {
+	text-align: right
+}
+.course-hover:hover {
+	background-color: var(--col-bg-b);
+}
+.course-hover:hover ul {
+	color: var(--col-bg-b-on);
+}
+.drop-course {
+	display: none;
+}
+.course-dropdown1:hover .sem1 {
+	display: block;
+}
+
+.course-dropdown2:hover .sem2 {
+	display: block;
+}
+
+.course-dropdown3:hover .sem3 {
+	display: block;
+}
+
+.course-dropdown4:hover .sem4 {
+	display: block;
+}
+
+.drop-course li{
+	display: block;
+	padding: 0.4rem;
+	border-bottom: 0.05rem solid var(--col-bg-on);
 }
