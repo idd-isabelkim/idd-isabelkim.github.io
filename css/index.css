@@ -2,10 +2,13 @@
 
 
 html {
-	--col-bg: #D9DEC2;	
+	--col-bg: #093957;	
+	--col-bg-on: #ffffff;	
 	--col-bg-b: #0065a4;
-	--col-bg-on: #424242;
 	--col-bg-b-on: #ffffff;
+	--col-bg-2: #EDF3FF;
+	--col-bg-2-on: #004570;
+	--hover: #3683B3;
 }
 
 body {	
@@ -27,12 +30,13 @@ h2 {
 
 ul {
 	font-size: 1rem;
+	font-weight: 300;
 }
 
 li {
 	list-style: none;
 	font-weight: 300;
-	font-size: 1rem;
+	font-size: .9rem;
 }
 p {
 	font-weight: 300;
@@ -40,12 +44,16 @@ p {
 }
 a{
 	text-decoration: none;
+	font-size: .9rem;
+	font-weight: 300;
 }
 button {
 	background: transparent;
 	border: none;
 }
-
+i {
+	color: var(--col-bg-b-on)
+}
 .logo-bar {
 	width: 100%;
 	max-height: 5rem;
@@ -109,8 +117,16 @@ button {
 .breadcrumbs span {
 	font-size: 0.8rem;
 }
+.breadcrumbs a {
+	color: var(--col-bg-b-on);
+	opacity: 0.5;
+}
+.current a{
+	color: var(--col-bg-b-on);
+	opacity: 1;
+}
 .breadcrumbs {
-	padding: 5.5rem 0 0.5rem 0;
+	padding: 5rem 0 0.5rem 0;
 	text-align: center;
 }
 .title {
@@ -148,21 +164,28 @@ button {
 	font-weight: 300
 }
 .about {
-	padding: 0 1rem
+	padding: 0 1rem 1rem 1rem
 }
 .about p{
 	line-height: 1.5rem;
 	padding: 1rem 0
 	/* letter-spacing: 0.02rem; */
 }
+.about h2 {
+	padding-bottom: 1rem;
+	border-bottom: .05rem solid var(--col-bg-b-on);
+}
 
 
 .courses {
-	padding: 0 1rem;
+	padding: 1rem 1rem;
+	position: relative;
+	background-color: var(--col-bg-2);
+	color: var(--col-bg-2-on);
 }
 .courses h2 {
-	padding: .5rem 0;
-	border-bottom: .05rem solid black;
+	padding: 1rem 0;
+	border-bottom: .05rem solid var(--col-bg-2-on);
 }
 .course-hover {
 	display: grid;
@@ -171,40 +194,80 @@ button {
 	align-self: center;
 }
 .course-hover ul {
-	padding: .5rem 0;
-	color: var(--col-bg-on);
-	font-weight: 300;
+	padding: 1rem 1rem;
+	color: var(--col-bg-2-on);
 }
 .course-hover button {
-	text-align: right
+	text-align: right;
+}
+.course-hover i {
+	color: var(--col-bg-2-on);
 }
 .course-hover:hover {
-	background-color: var(--col-bg-b);
+	background-color: var(--hover);
 }
 .course-hover:hover ul {
-	color: var(--col-bg-b-on);
+	color: var(--col-bg-2);
 }
 .drop-course {
 	display: none;
+	padding: 0 2rem;
+}
+.drop-course li{
+	display: block;
+	padding: 0.6rem;
+}
+.drop-course a{
+	display: block;
+	text-align: center;
+	padding: .5rem;
 }
 .course-dropdown1:hover .sem1 {
 	display: block;
 }
-
 .course-dropdown2:hover .sem2 {
 	display: block;
 }
-
 .course-dropdown3:hover .sem3 {
 	display: block;
 }
-
 .course-dropdown4:hover .sem4 {
 	display: block;
 }
-
-.drop-course li{
+.course-dropdown5:hover .sem5 {
 	display: block;
-	padding: 0.4rem;
-	border-bottom: 0.05rem solid var(--col-bg-on);
+}
+.course-dropdown6:hover .sem6 {
+	display: block;
+}
+
+.careers {
+	padding: 1rem;
+}
+.careers h2 {
+	padding: 1rem 0;
+	border-bottom: .05rem solid var(--col-bg-b-on);
+}
+
+.careers li {
+	padding: .75rem 1rem
+}
+
+.portfolio {
+	background-color: var(--col-bg-2);
+	color: var(--col-bg-2-on);
+	padding: 1rem;
+}
+.portfolio h2 {
+	padding: 1rem 0;
+	border-bottom: .05rem solid var(--col-bg-2-on)
+}
+.portfolio-photos {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-self: center
+}
+.portfolio-photos li {
+	padding: .5rem;
+	align-self: center;
 }
