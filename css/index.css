@@ -271,3 +271,14 @@ i {
 	padding: .5rem;
 	align-self: center;
 }
+footer {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.footer {
+	background-color: var(--col-bg-b);
+	padding: 1rem 1rem;
+}
+.footer li{
+	font-size: 0.3rem;
+}
