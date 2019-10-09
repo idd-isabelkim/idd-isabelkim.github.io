@@ -267,9 +267,13 @@ i {
 	grid-template-columns: auto auto auto;
 	align-self: center
 }
+.portfolio ul {
+	padding: 1rem 0
+}
 .portfolio-photos li {
-	padding: .5rem;
+	padding: 0.2rem;
 	align-self: center;
+	width: 6rem;
 }
 footer {
 	display: grid;
@@ -281,4 +285,58 @@ footer {
 }
 .footer li{
 	font-size: 0.3rem;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.footer a {
+	color: var(--col-bg-b-on);
+	font-size: 0.3rem;
+}
+.connect-word {
+	align-self: center
+}
+.connect img {
+	max-width: 1.5rem;
+	padding: 0.2rem;
+}
+.connect li {
+	padding: 0.2rem;
+}
+
+@media screen and (min-width: 767px) {
+	.logo-bar {
+		width: 100%;
+		max-height: 5rem;
+		text-align: middle;
+		margin: auto;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 1rem;
+		background-color: var(--col-bg-b);
+		/* position: fixed; */
+		z-index: 1;	
+	}
+	.dropdown-menu {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		/* position: absolute; */
+		background-color: var(--col-bg);
+		width: 100%;
+		font-weight: 300;
+		font-size: 0.875rem;
+		text-align: center;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.portfolio-photos {
+		grid-template-columns: auto auto auto auto auto auto;
+	}
+
+	.portfolio-photos li {
+		padding: 0.2rem;
+		width: auto;
+	}
 }
