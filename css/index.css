@@ -157,7 +157,7 @@ i {
 .detail dt {
 	font-size: 0.8rem;
 	font-weight: 700;
-	padding: 0.5rem 0 0.3rem 0
+	padding: 0.7rem 0 0.3rem 0
 }
 .detail dd {
 	font-size: 0.7rem;
@@ -265,7 +265,7 @@ i {
 .portfolio-photos {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	align-self: center
+	place-items: center;
 }
 .portfolio ul {
 	padding: 1rem 0
@@ -273,7 +273,9 @@ i {
 .portfolio-photos li {
 	padding: 0.2rem;
 	align-self: center;
-	width: 6rem;
+	width: auto;
+	max-width: 10rem;
+	text-align: center;
 }
 footer {
 	display: grid;
@@ -284,13 +286,14 @@ footer {
 	padding: 1rem 1rem;
 }
 .footer li{
-	font-size: 0.3rem;
+	font-size: 0.7rem;
 	display: grid;
 	grid-template-columns: auto auto;
+	padding: 0.2rem;
 }
 .footer a {
 	color: var(--col-bg-b-on);
-	font-size: 0.3rem;
+	font-size: 0.7rem;
 }
 .connect-word {
 	align-self: center
@@ -302,29 +305,60 @@ footer {
 .connect li {
 	padding: 0.2rem;
 }
-
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 600px) {
+	.detail {
+		display: inline-grid;
+		grid-template-columns: repeat(4, auto);
+		position: relative;
+		bottom: 4rem;
+		color: var(--col-bg-b-on);
+		padding: 0 1rem;
+		width: 100%;
+	}
+	.ID-careers {
+		display: grid;
+		grid-template-columns: auto auto
+	}
+	.portfolio-photos li {
+		width: 9rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	
 	.logo-bar {
 		width: 100%;
-		max-height: 5rem;
+		max-height: 10rem;
 		text-align: middle;
 		margin: auto;
-		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: 1rem;
+		display: grid; 
+		grid-template-columns: 8rem auto 8rem;
+		grid-gap: 0rem;
 		background-color: var(--col-bg-b);
 		/* position: fixed; */
 		z-index: 1;	
 	}
+	.logo {
+		grid-column-start: 1;
+	}
+	.dropdown {
+		grid-column-start: 2;
+	}
+	.search {
+		grid-column-start: 3;
+	}
 	.dropdown-menu {
 		display: grid;
 		grid-template-columns: auto auto auto auto auto;
-		/* position: absolute; */
-		background-color: var(--col-bg);
-		width: 100%;
-		font-weight: 300;
-		font-size: 0.875rem;
+		/* position: relative;
+		top: 6rem; */
+		background-color: var(--col-bg-b);
+		width: auto;
 		text-align: center;
+		padding: 1rem;
+	}
+	.dropdown-menu a {
+		font-weight: 700;
+		border: none;
 	}
 
 	.menu {
