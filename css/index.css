@@ -397,33 +397,6 @@ footer {
 }
 
 @media screen and (min-width: 880px) {
-	
-	.logo-bar {
-		grid-template-columns: repeat(6, 1fr);
-	}
-	
-	.top-search {
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-	.top-search i {
-		position: relative;
-		left: 12rem;
-		color: var(--col-bg-b)
-	}
-	.search-bar {
-		display: block;
-		margin-right: 1rem;
-	}
-	.breadcrumbs {
-		position: fixed;
-		top: 1rem;
-		background-color: var(--col-bg);
-		color: var(--col-bg-b-on);
-		width: 100%;
-		min-height: 7rem;
-		z-index: 1;
-	}
 	h1 {
 		font-size: 1em;
 		font-weight: 700;
@@ -481,11 +454,57 @@ footer {
 		font-size: 1rem;
 		font-weight: 300;
 	}
+	
+	.logo-bar {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	
+	.top-search {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	
+	.top-search i {
+		position: relative;
+		left: 12rem;
+		color: var(--col-bg-b)
+	}
+	.search-bar {
+		display: block;
+		margin-right: 1rem;
+	}
+	.breadcrumbs {
+		position: fixed;
+		top: 1rem;
+		background-color: var(--col-bg);
+		color: var(--col-bg-b-on);
+		width: 100%;
+		min-height: 7rem;
+		z-index: 1;
+	}
+	.detail {
+		padding: 0 5rem;
+	}
 	.detail dt{
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 	.detail dd {
-		font-size: 1rem;
+		font-size: 0.8rem;
+	}
+	.about {
+		padding: 1rem 5rem;
+	}
+	.courses {
+		padding: 1rem 5rem;
+	}
+	.careers {
+		padding: 1rem 5rem;
+	}
+	.portfolio {
+		padding: 1rem 5rem;
+	}
+	.footer {
+		padding: 1rem 5rem;
 	}
 	.footer li {
 		font-size: 0.8rem;
@@ -526,6 +545,12 @@ footer {
 		min-height: 7rem;
 	}
 	.breadcrumbs a{
+		font-size: 1rem;
+	}
+	.detail dt{
+		font-size: 1.2rem;
+	}
+	.detail dd {
 		font-size: 1rem;
 	}
 }
